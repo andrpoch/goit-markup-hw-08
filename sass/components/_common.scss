@@ -1,0 +1,15 @@
+body {
+  background-color: var(--white-text-color);
+  color: var(--main-text-color);
+  font-family: roboto, sans-serif;
+}
+.section-title {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}

@@ -1,0 +1,16 @@
+:root {
+  --main-text-color: #212121;
+  --secont-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent: #2196f3;
+  --background-main-section-studio-and-footer: #2f303a;
+  --background-section-command-and-button-portfolio: #f5f4fa;
+  --icon-color: #afb1b8;
+}
+
+.accent-blue {
+  color: var(--accent);
+}
+.accent-white {
+  color: var(--white-text-color);
+}
