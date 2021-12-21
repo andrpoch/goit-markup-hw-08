@@ -1,8 +1,30 @@
 .works {
+  @media screen and(max-width:1199px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
   padding-top: 47px;
   padding-bottom: 94px;
 }
 
+.works img {
+  @media screen and(max-width:1199px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
 .works-list {
   display: flex;
   margin-right: -30px;
