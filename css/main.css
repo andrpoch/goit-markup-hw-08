@@ -37,6 +37,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -58,10 +60,29 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .is-hidden {
@@ -216,26 +237,67 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
-  margin: 0 auto;
   background-color: var(--background-main-section-studio-and-footer);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobgc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 600px;
+  }
 }
 
 .hero__title {
   color: var(--white-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
-  padding-bottom: 30px;
   margin: 0 auto;
+  max-width: 360px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
 }
 
 .hero__btn {
@@ -255,31 +317,79 @@ img {
 }
 
 .benefits {
-  padding: 94px 0px 47px 0px;
+  padding: 60px 0px 60px 0px;
 }
 
-.benefits-list {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .benefits-list__description {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.benefits-list__description:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-list__description {
+    margin-right: 30px;
+  }
+  .benefits-list__description:nth-child(2) {
+    margin-right: 0px;
+  }
+  .benefits-list__description:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__description {
+    margin-right: 30px;
+  }
+  .benefits-list__description:last-child {
+    margin-right: 0px;
+  }
 }
 
 .benefits-list__icon {
-  width: 270px;
-  height: 120px;
   background-color: var(--background-section-command-and-button-portfolio);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .benefits-list__icon {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__icon {
+    width: 270px;
+  }
 }
 
 .benefits-list__title {
@@ -290,6 +400,19 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__title {
+    text-align: start;
+  }
 }
 
 .benefits-list__text {
@@ -298,7 +421,19 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  max-width: 270px;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list__text {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__text {
+    max-width: 270px;
+  }
 }
 
 .works {
@@ -338,30 +473,39 @@ img {
 
 .command {
   background-color: var(--background-section-command-and-button-portfolio);
-  padding-top: 94px;
-  padding-bottom: 94px;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.command-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .command {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.command-list__people {
-  background-color: var(--white-text-color);
-  width: 270px;
-  margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.command-list__people:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .command-container {
-  padding: 30px 0px;
+  padding: 30px 0px 24px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .command-container {
+    padding: 30px 0px 24px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-container {
+    padding: 30px 0px;
+  }
 }
 
 .command-title {
@@ -378,7 +522,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
@@ -522,6 +666,7 @@ img {
 
 .right-subscribe {
   margin-left: 93px;
+  display: flex;
 }
 
 .right-subscribe__text {
@@ -533,6 +678,10 @@ img {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+}
+
+.right-subscribe__form_position {
+  display: flex;
 }
 
 .right-subscribe__label {
@@ -567,10 +716,8 @@ img {
 .right-subscribe__btn-submit {
   display: flex;
   align-items: center;
-  text-align: center;
   border-radius: 4px;
   min-width: 200px;
-  padding: 10px;
   border: none;
   color: var(--white-text-color);
   background-color: var(--accent);

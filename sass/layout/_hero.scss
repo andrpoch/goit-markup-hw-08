@@ -1,25 +1,48 @@
 .hero {
-  max-width: 1600px;
-  min-height: 600px;
-  margin: 0 auto;
-
   background-color: var(--background-main-section-studio-and-footer);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg-img.jpg);
+    url(../images/herobgc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 600px;
+  }
+
   &__title {
     color: var(--white-text-color);
-    @include font(900, 44px, 1.36, 0.06em);
+    @include font(900, 26px, 1.62, 0.06em);
     text-transform: uppercase;
-
-    max-width: 696px;
-    padding-bottom: 30px;
     margin: 0 auto;
+    max-width: 360px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      @include font(900, 26px, 1.62, 0.06em);
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px) {
+      @include font(900, 44px, 1.36, 0.06em);
+      max-width: 696px;
+      padding-bottom: 30px;
+      margin: 0 auto;
+    }
   }
   &__btn {
     display: inline-block;
