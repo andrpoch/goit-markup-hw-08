@@ -45,22 +45,16 @@
           </ul>
           <ul class="contacts">
             <li class="contacts__items">
-              <a
-                class="nav-list__link nav-list__link_text-col"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="nav-list__icon" width="16" height="12">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
             <li>
-              <a
-                class="nav-list__link nav-list__link_text-col"
-                href="tel:+380961111111"
-              >
-                <svg class="nav-list__icon" width="10" height="16">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -69,7 +63,88 @@
           </ul>
         </nav>
       </div>
+      <button type="button" class="menu-open-btn">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#open-menu-icon"></use>
+        </svg>
+      </button>
+
+      <div class="mob-menu is-hidden">
+        <div class="container mob-menu__container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#close-menu-icon"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-list__item">
+                <a
+                  class="mob-menu-list__link mob-menu-list__link_active"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-contacts-list">
+              <li class="mob-contacts-list__items_number">
+                <a
+                  class="mob-contacts-list__link_number"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts-list__items_mail">
+                <a
+                  class="mob-contacts-list__link_mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-social-list">
+              <li class="mob-social-list__item">
+                <a
+                  class="mob-social-list__link mob-social-list__link_decor"
+                  href=""
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-social-list__item">
+                <a
+                  class="mob-social-list__link mob-social-list__link_decor"
+                  href=""
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-social-list__item">
+                <a
+                  class="mob-social-list__link mob-social-list__link_decor"
+                  href=""
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-social-list__item">
+                <a class="mob-social-list__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <section class="portfolio">
         <div class="container">
@@ -617,5 +692,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -8,8 +8,8 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 290px;
+  width: 100%;
   background: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -19,6 +19,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px 40px 40px 40px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
   &__close-btn {
     width: 30px;
     height: 30px;
@@ -109,7 +117,7 @@
   &__checkbox {
     margin-top: 20px;
   }
-  &__check:checked + .form-list__check-text span {
+  &__check:checked + .form-list__check-text .form-list__check-text_valid {
     background-color: var(--accent);
     border: none;
   }
@@ -137,8 +145,12 @@
       margin-right: 4px;
     }
     & > a {
-      @include font(null, 14px, 1.71, 0.03em);
-      color: var(--accent);
+      @include font(null, 12px, 1.16, 0.03em);
+      color: var(--main-text-color);
+      text-decoration: none;
+      @media screen and (min-width: 1200px) {
+        @include font(null, 14px, 1.71, 0.03em);
+      }
     }
   }
   &__check-icon {
@@ -156,8 +168,25 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-
-    padding: 10px 55px;
-    margin: 30px 124px 0px 124px;
+    padding: 4px 25px;
+    margin: 30px auto 0px auto;
+    @media screen and (min-width: 480px) {
+      padding: 10px 55px;
+      // margin: 30px 125px 0px 125px;
+      margin: 30px auto 0px auto;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 10px 55px;
+      margin: 30px auto 0px auto;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 10px 55px;
+      margin: 30px auto 0px auto;
+    }
+  }
+  &__text_change {
+    color: var(--accent);
+    text-decoration: underline;
+    background-color: transparent;
   }
 }

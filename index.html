@@ -46,22 +46,16 @@
           </ul>
           <ul class="contacts">
             <li class="contacts__items">
-              <a
-                class="nav-list__link nav-list__link_text-col"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="nav-list__icon" width="16" height="12">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
             <li>
-              <a
-                class="nav-list__link nav-list__link_text-col"
-                href="tel:+380961111111"
-              >
-                <svg class="nav-list__icon" width="10" height="16">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -101,37 +95,47 @@
                 <a class="mob-menu-list__link" href="">Контакты</a>
               </li>
             </ul>
+          </div>
+          <div class="mob-menu__bottom">
             <ul class="mob-contacts-list">
-              <li class="mob-contacts-list__items">
+              <li class="mob-contacts-list__items_number">
                 <a
-                  class="
-                    mob-contacts-list__link mob-contacts-list__link_text-col
-                  "
-                  href="mailto:info@devstudio.com"
-                >
-                  info@devstudio.com
-                </a>
-              </li>
-              <li>
-                <a
-                  class="
-                    mob-contacts-list__link mob-contacts-list__link_text-col
-                  "
+                  class="mob-contacts-list__link_number"
                   href="tel:+380961111111"
                 >
                   +38 096 111 11 11</a
                 >
               </li>
+              <li class="mob-contacts-list__items_mail">
+                <a
+                  class="mob-contacts-list__link_mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
             </ul>
             <ul class="mob-social-list">
               <li class="mob-social-list__item">
-                <a class="mob-social-list__link" href="">Instagram</a>
+                <a
+                  class="mob-social-list__link mob-social-list__link_decor"
+                  href=""
+                  >Instagram</a
+                >
               </li>
               <li class="mob-social-list__item">
-                <a class="mob-social-list__link" href="">Twitter</a>
+                <a
+                  class="mob-social-list__link mob-social-list__link_decor"
+                  href=""
+                  >Twitter</a
+                >
               </li>
               <li class="mob-social-list__item">
-                <a class="mob-social-list__link" href="">Facebook</a>
+                <a
+                  class="mob-social-list__link mob-social-list__link_decor"
+                  href=""
+                  >Facebook</a
+                >
               </li>
               <li class="mob-social-list__item">
                 <a class="mob-social-list__link" href="">LinkedIn</a>
@@ -500,7 +504,6 @@
                   alt="Михаил Ермаков"
                 />
               </picture>
-              <img src="./images/people4.jpg" />
               <div class="command-container">
                 <h3 class="command-title">Михаил Ермаков</h3>
                 <p class="command-text">UI Designer</p>
@@ -591,7 +594,7 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <ul class="footer-content">
           <li>
@@ -697,7 +700,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -778,13 +781,17 @@
               id="policy"
             />
             <label for="policy" class="form-list__check-text">
-              <span>
+              <span class="form-list__check-text_valid">
                 <svg class="form-list__check-icon" width="11" height="8">
                   <use href="./images/icons.svg#icon-check-icon"></use>
                 </svg>
               </span>
               <a href="./index.html"
-                >Соглашаюсь с рассылкой и принимаю Условия договора</a
+                >Соглашаюсь с рассылкой и принимаю<span
+                  class="form-list__text_change"
+                >
+                  Условия договора</span
+                ></a
               >
             </label>
           </div>
