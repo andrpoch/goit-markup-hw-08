@@ -131,18 +131,26 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
+.container-btn {
+  width: 100%;
+  position: relative;
+  padding-right: 15px;
+  margin: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 .menu-open-btn {
   width: 40px;
   height: 40px;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 10px;
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: -50px;
+  right: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,6 +163,7 @@
     display: none;
   }
 }
+
 .mob-menu {
   position: fixed;
   background-color: #ffffff;
@@ -196,6 +205,7 @@
     fill: var(--accent);
   }
 }
+
 .mob-menu-list {
   &__item {
     margin-bottom: 32px;

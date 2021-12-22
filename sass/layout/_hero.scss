@@ -17,20 +17,36 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/herobgc-mob-2x-min.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        Ы rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/herobgc-mob-2x-min.jpg);
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero/herobgc-tab-min.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/herobgc-tab-min.jpg);
     padding-top: 118px;
     padding-bottom: 118px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/herobgc-tab-2x-min.jpg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/herobgc-tab-2x-min.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/hero/herobgc.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/herobgc.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
@@ -39,7 +55,11 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/herobgc-2x-min.jpg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/herobgc-2x-min.jpg);
     }
   }
 

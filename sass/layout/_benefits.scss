@@ -1,6 +1,9 @@
 .benefits {
   padding: 60px 0px 60px 0px;
-  // padding: 94px 0px 47px 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px 47px 0px;
+  }
 }
 .benefits-list {
   @media screen and (min-width: 768px) {
@@ -19,6 +22,7 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0px;
       margin-right: 30px;
       &:nth-child(2) {
         margin-right: 0px;
@@ -28,6 +32,7 @@
       }
     }
     @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
       margin-right: 30px;
       &:last-child {
         margin-right: 0px;
